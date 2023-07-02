@@ -1,0 +1,71 @@
+/** @define Dashboard */
+@import '../../styles/base';
+
+.Dashboard {
+  @include DirectionY;
+
+  @include apply-at-xs2-size {
+    min-height: calc(100vh + 34vh);
+  }
+
+  @include apply-at-lg-size {
+    position: relative !important;
+    min-height: 100% !important;
+  }
+
+  .Dashboard_container {
+    @include DirectionY;
+
+    @include apply-at-xs2-size {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include apply-at-lg-size {
+      display: block !important;
+    }
+
+    .Dashboard_text {
+      display: flex;
+      width: 100%;
+      background-color: $color-primary-white;
+
+      .Dashboard_showing {
+        color: $color-primary-grey;
+        font-size: 12px;
+        font-weight: 400;
+        padding-left: 1.5rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  .Dashboard_askWrapper {
+    @include DirectionX;
+
+    background-color: $color-primary-white;
+    padding: 0 1rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+
+    @include apply-at-lg-size {
+      padding: 1rem 2rem 2rem;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+    .Dashboard_ask {
+      color: $color-primary-grey;
+      font-size: 14px;
+      font-weight: 400;
+
+      @include apply-at-lg-size {
+        font-size: 16px;
+      }
+    }
+
+    .Dashboard_buttonAsk {
+      padding: 13.5px 16px;
+    }
+  }
+}

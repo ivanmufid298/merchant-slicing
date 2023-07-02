@@ -1,0 +1,11 @@
+@import '../../../styles/base';
+
+.Card {
+  width: 463px;
+  height: 118px;
+  background-color: $color-white;
+  box-shadow: -4px 4px 20px 8px rgb(0 0 0 / 7%);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 16px;
+}

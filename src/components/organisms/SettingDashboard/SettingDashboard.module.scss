@@ -1,0 +1,85 @@
+.avatar__name {
+  font-size: 16px;
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  line-height: 22px;
+  color: var(--new-brand-color-272-d-38, #272d38);
+  margin: auto;
+}
+
+.avatar__mail {
+  color: var(--new-brand-color-42444-a, #42444a);
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Source Sans Pro';
+  line-height: 16px;
+}
+
+.content__card {
+  width: 328px;
+  height: 121px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: var(--new-brand-color-f-7-f-7-fb, #f7f7fb);
+}
+
+.avatar__role {
+  color: var(--new-brand-color-272-d-38, #272d38);
+
+  /* 12/regular */
+  font-size: 12px;
+  font-family: 'Source Sans Pro';
+  line-height: 16px;
+  background-color: #e5ecff;
+  border-radius: 16px;
+  padding: 4px 8px;
+}
+
+.avatar__card {
+  width: 328px;
+  height: auto;
+  border-radius: 16px;
+  background: var(--new-brand-color-f-7-f-7-fb, #f7f7fb);
+  box-sizing: border-box;
+
+  //   margin: auto;
+}
+
+.account__icon {
+  border-radius: 50%;
+  padding: 8px;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+
+.avatar__role__title {
+  display: flex;
+
+  //   border-bottom: 1px solid #000;
+}
+
+.avatar__role__title2 {
+  display: flex;
+}
+
+.label__content {
+  flex-wrap: wrap;
+}
+
+.label__role {
+  color: var(--new-brand-color-272-d-38, #272d38);
+  font-size: 12px;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  line-height: 16px;
+  padding-left: 8px;
+}
+
+.label__role__text {
+  color: var(--new-brand-color-7781-a-3, #7781a3);
+  font-size: 12px;
+  font-family: 'Source Sans Pro';
+  line-height: 16px;
+  padding-left: 8px;
+}

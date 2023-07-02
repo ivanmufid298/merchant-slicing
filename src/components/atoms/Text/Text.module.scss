@@ -1,0 +1,49 @@
+@import '../../../styles/base';
+
+.Text___regular12 {
+  @include Regular12;
+}
+
+.Text___regular14 {
+  @include Regular14;
+}
+
+.Text___regular16 {
+  @include Regular16;
+}
+
+.Text___semiBold10 {
+  @include SemiBold10;
+}
+
+.Text___semiBold12 {
+  @include SemiBold12;
+}
+
+.Text___semiBold14 {
+  @include SemiBold14;
+}
+
+.Text___semiBold16 {
+  @include SemiBold16;
+}
+
+.Text___semiBold20 {
+  @include SemiBold20;
+}
+
+.Text___semiBold24 {
+  @include SemiBold24;
+}
+
+.Text___bold12 {
+  @include Bold12;
+}
+
+.Text___bold14 {
+  @include Bold14;
+}
+
+.Text___bold16 {
+  @include Bold16;
+}

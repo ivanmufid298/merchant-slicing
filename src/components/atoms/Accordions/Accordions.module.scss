@@ -1,0 +1,37 @@
+@import '../../../styles/base';
+
+.Accordions {
+  .Accordions_wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    gap: 10px;
+    border: none;
+    padding: 0 0 4px;
+
+    @include apply-at-lg-size {
+      padding: 0 !important;
+      gap: 14px;
+    }
+
+    .Accordions___title {
+      font-weight: 700;
+      font-size: 16px;
+      font-family: $font-stack;
+    }
+
+    .Accordions___titleMobile {
+      font-weight: 600;
+    }
+
+    .Accordions_icon {
+      width: 9px;
+      height: 14px;
+      padding-top: 6px;
+    }
+
+    .Accordions___open {
+      transform: rotate(180deg);
+    }
+  }
+}

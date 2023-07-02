@@ -1,0 +1,117 @@
+@import '../../../styles/base';
+
+.Recap {
+  @include DirectionY;
+
+  gap: 8px;
+
+  @include apply-at-lg-size {
+    @include DirectionX;
+
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .Recap_container {
+    @include DirectionX;
+
+    gap: 2px;
+
+    @include apply-at-lg-size {
+      gap: 1.5rem;
+    }
+
+    .Recap_wrapper {
+      @include DirectionX;
+
+      justify-content: space-between;
+      width: calc(100% / 3);
+      padding: 12px 8px;
+
+      @include apply-at-lg-size {
+        border-radius: 24px !important;
+        padding: 0 !important;
+        width: 282px;
+        height: 114px;
+      }
+    }
+
+    .Recap_wrapper:nth-child(1) {
+      @include apply-at-xs2-size {
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+      }
+    }
+
+    .Recap_wrapper:nth-child(3) {
+      @include apply-at-xs2-size {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+    }
+  }
+
+  .Recap_balance {
+    @include DirectionX;
+
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 12px 8px;
+
+    @include apply-at-lg-size {
+      width: 458px;
+      height: 114px;
+      border-radius: 24px !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+.Recap___content {
+  background: $color-primary-light;
+}
+
+.Recap___store {
+  border: 1px solid $color-primary-light;
+}
+
+.Recap_contentRight {
+  @include DirectionY;
+
+  justify-content: flex-end;
+
+  @include apply-at-lg-size {
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+  }
+
+  .Recap_topWrapper {
+    @include DirectionX;
+
+    align-items: center;
+  }
+
+  .Recap_percentage {
+    font-weight: 600;
+    font-size: 14px;
+    color: #00b14f;
+    margin-left: 5px;
+    margin-top: -5px;
+  }
+
+  .Recap___colorIncrease {
+    color: #00b14f;
+  }
+
+  .Recap___colorDecrease {
+    color: $color-dark-coral;
+  }
+
+  .Recap_days {
+    @include DirectionX;
+
+    font-weight: 600;
+    font-size: 10px;
+    color: $color-primary-grey;
+  }
+}

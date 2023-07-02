@@ -1,0 +1,52 @@
+@import '../../../styles/base';
+
+.MobileHeader {
+  @include DirectionX;
+
+  justify-content: space-between;
+  padding: 1rem 1rem 0;
+
+  .MobileHeader_content {
+    @include DirectionY;
+  }
+
+  .MobileHeader_super {
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-primary-black;
+  }
+
+  .MobileHeader_store {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .MobileHeader_iconWrapper {
+    @include DirectionX;
+
+    gap: 10px;
+
+    .MobileHeader_icon {
+      background: $color-primary-light;
+      padding: 12px;
+      border-radius: 20px;
+      width: 14px;
+      height: 14px;
+      color: $color-primary;
+    }
+
+    .MobileHeader_mail {
+      width: 24px;
+      height: 24px;
+      color: $color-primary;
+    }
+  }
+}
+
+.MobileHeader_divider {
+  margin-top: 10px;
+  background-color: $color-primary-white;
+  height: 4px;
+}

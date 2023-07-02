@@ -1,0 +1,69 @@
+@import '../../../styles/base';
+
+.AskMeMobile {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.AskMeMobile_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AskMeMobile_logo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+}
+
+.AskMeMobile_content {
+  width: 328px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.AskMeMobile_title {
+  width: 100%;
+  height: 26px;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-primary-black;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.AskMeMobile_label {
+  width: 100%;
+  font-style: normal;
+  height: fit-content;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: $color-primary-grey;
+
+  @include Regular12;
+}
+
+.AskMeMobile_form {
+  width: 328px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 22px;
+}

@@ -1,0 +1,25 @@
+name: ESLint Check & Prettier Run
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  lint-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Packages
+        run: npm ci
+
+      - name: Run Prettier
+        run: npm run prettier
+
+      - name: Check ESLint
+        run: npm run lint

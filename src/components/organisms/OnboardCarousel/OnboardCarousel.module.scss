@@ -1,0 +1,60 @@
+@import '../../../styles/base';
+
+.OnboardCarousel {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.OnboardCarousel_container {
+  width: 502px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  margin: 32px;
+}
+
+.OnboardCarousel_title {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: $color-primary-black;
+  margin-top: 36px;
+}
+
+.OnboardCarousel_description {
+  width: 502px;
+  height: fit-content;
+  text-align: center;
+  margin: 24px 0 0;
+
+  @include Regular14;
+}
+
+.OnboardCarousel_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+
+  & span {
+    display: block;
+    width: 20px;
+    height: 10px;
+    background-color: $color-primary-border;
+    margin: 0 0.25rem;
+    border-radius: 8.6957px;
+    cursor: pointer;
+  }
+}
+
+.OnboardCarousel_buttons___active {
+  width: 60px !important;
+  background-color: $color-primary !important;
+}

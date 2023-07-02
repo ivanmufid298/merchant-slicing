@@ -1,0 +1,13 @@
+@import '../../../styles/base';
+
+.TabBar {
+  @include DirectionX;
+
+  border-top: 1px solid #f0efef;
+  width: 100%;
+  justify-content: space-between;
+
+  .TabBar_wrapper {
+    @include DirectionY;
+  }
+}

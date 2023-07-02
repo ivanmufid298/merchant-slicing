@@ -1,0 +1,55 @@
+@import '../../../styles/base';
+
+.RecapItem {
+  @include DirectionY;
+
+  @include apply-at-lg-size {
+    padding: 1.5rem;
+  }
+
+  .RecapItem_wrapperItem {
+    @include DirectionX;
+
+    margin-bottom: 0.25rem;
+
+    .RecapItem_wrapperIcon {
+      display: flex;
+      border-radius: 20px;
+      padding: 0.3rem;
+      margin-right: 0.3rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .RecapItem_icon {
+        @include apply-at-lg-size {
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+
+    .RecapItem_title {
+      font-size: 14px;
+      color: #7781a3;
+      font-weight: 600;
+      margin-top: 5px;
+
+      @include apply-at-lg-size {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .RecapItem_wrapperValue {
+    margin-left: 5px;
+
+    .RecapItem_value {
+      @include DirectionY;
+
+      font-size: 24px;
+      color: #42444a;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../../styles/base';
+
+.NavBar {
+  @include DirectionX;
+
+  width: 158px;
+  height: 58px;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.NavBar___active {
+  @include DirectionX;
+
+  width: 158px;
+  height: 58px;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: $color-primary;
+  color: $color-white;
+}

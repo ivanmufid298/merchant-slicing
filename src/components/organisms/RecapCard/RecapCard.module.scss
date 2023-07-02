@@ -1,0 +1,66 @@
+@import '../../../styles/base';
+
+.RecapCard {
+  background: $color-white;
+
+  .RecapCard_wrapper {
+    @include DirectionY;
+
+    padding: 0.5rem 1rem 1rem;
+
+    .RecapCard_headerWrapper {
+      @include DirectionX;
+
+      justify-content: space-between;
+
+      @include apply-at-lg-size {
+        justify-content: flex-start !important;
+        gap: 1.5rem;
+      }
+
+      .RecapCard_title {
+        color: $color-primary-black;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+
+        @include apply-at-lg-size {
+          font-size: 24px;
+        }
+      }
+
+      .RecapCard_detail {
+        font-weight: 700;
+        font-size: 12px;
+        color: #4c79f0;
+
+        @include apply-at-lg-size {
+          margin-top: 0.5rem;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .RecapCard_address {
+      font-size: 12px;
+      font-weight: 400;
+      color: #272d38;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .RecapCard___wrapperStore {
+    padding: 1rem;
+
+    @include apply-at-lg-size {
+      padding: 2rem;
+    }
+  }
+}
+
+.RecapCard_divider {
+  @include DirectionX;
+
+  height: 1rem;
+  background-color: $color-primary-white;
+}

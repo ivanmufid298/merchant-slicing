@@ -1,0 +1,40 @@
+@import './../../../styles/base';
+
+.DashboardFooter {
+  @include DirectionX;
+
+  background-color: $color-primary-white;
+  padding: 0 1rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+
+  @include apply-at-md-size {
+    padding: 1rem 2rem 2rem;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .DashboardFooter_text {
+    color: $color-primary-grey;
+
+    @include Regular12;
+
+    font-style: normal;
+
+    @include apply-at-md-size {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .DashboardFooter_btn {
+    width: 85px;
+    height: 36px;
+    border-radius: 8px;
+    padding: 7px 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,60 @@
+@import '../../../styles/base';
+
+.Button {
+  padding: 16px 24px;
+  border-radius: 12px;
+  border: none;
+  text-transform: none;
+  font-size: $font-size-button;
+  line-height: $font-line-height-button;
+  font-weight: $font-weight-button;
+  font-family: $font-stack;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Button___solid {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.Button___light {
+  background-color: $color-primary-light;
+  color: $color-primary;
+  border-color: transparent;
+}
+
+.Button___outline {
+  background-color: transparent;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+}
+
+.Button___error {
+  background-color: $color-coral;
+  color: $color-white;
+  border-color: transparent;
+}
+
+.Button___disabled {
+  background-color: $color-grey-1;
+  color: $color-primary-grey;
+  border: transparent;
+}
+
+.Button___unstyled {
+  padding: 16px 8px;
+  background-color: transparent;
+  color: $color-primary;
+}
+
+.Button___small {
+  background-color: #f8faff;
+  color: $color-primary;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}

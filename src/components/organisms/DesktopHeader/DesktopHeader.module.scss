@@ -1,0 +1,75 @@
+@import '../../../styles/base';
+
+.DesktopHeader {
+  @include DirectionX;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+
+  .DesktopHeader_contentLeft {
+    @include DirectionX;
+
+    justify-content: left;
+    gap: 1rem;
+    align-items: center;
+
+    .DesktopHeader_storeName {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  .DesktopHeader_contentMiddle {
+    @include DirectionX;
+
+    gap: 1rem;
+
+    .DesktopHeader_button {
+      width: 158px;
+      height: 58px;
+      border-radius: 24px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .DesktopHeader_contentRight {
+    @include DirectionX;
+
+    gap: 1rem;
+    align-items: center;
+
+    .DesktopHeader_mailWrapper {
+      margin-right: 0.5rem;
+      padding: 14px 14px 12px 12px;
+      border: 1px solid $color-primary-border;
+      border-radius: 16px;
+
+      .DesktopHeader_mail {
+        align-items: center;
+      }
+    }
+
+    .DesktopHeader_name {
+      padding: 6px 8px;
+      background: #d9d9d9;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 22px;
+      color: $color-primary-black;
+    }
+  }
+}
+
+.DesktopHeader_divider {
+  background-color: $color-primary-white;
+  height: 4px;
+}
+
+.DesktopHeader_moment {
+  font-size: 14px;
+  color: $color-primary-grey;
+  font-weight: 700;
+  padding: 2rem 2rem 0;
+}
